@@ -1,0 +1,85 @@
+
+#wrap_out {
+	width:100%;
+	overflow-x:hidden;
+}
+#wrap {
+	width: 960px;
+	margin: 0 auto;
+	z-index:1;
+	position:relative;
+}
+
+#separation {
+	margin: 0 auto;
+	width: 592px;
+	z-index:-1;
+	position:relative;
+}
+#separation div {
+	text-align: center;
+	font-size: 72px;
+}
+#separation div:before, #separation div:after {
+	content: "";
+	background:  url('images/arrowsdown.png') no-repeat 10px 10px;
+	width: 99px;
+	height: 76px;
+	display:inline-block;
+}
+#separation em, a em {
+	color: #e3af32;
+	font-style: normal;
+}
+.element {
+	position:absolute;
+	display:block;
+}
+.element#coriander {
+	top:0px;
+	left:30px;
+/*	width: 286px;
+	height: 272px;*/
+}
+.element#rosemary {
+	top:40px;
+	left: 335px;
+	width: 370px;
+	height: 183px;
+}
+.element#chives {
+	top : 0px;
+	right:30px;
+	width: 197px;
+	height: 514px;
+}
+.element#lemonbalm {
+	left: 30px;
+	top:280px;
+	width:265px;
+	height: 233px;
+}
+.element#basil {
+	right: 255px;
+	top:250px;
+	width:368px;
+	height: 263px;
+	text-align:right;
+}
+.element p {
+	position:absolute;
+	display:block;
+	bottom:0px;
+	left:0;
+	background: #fff;
+	background: rgba(255, 255, 255, .8);
+	padding:20px;
+	color: #837c5b;
+	visibility:hidden;
+}
+.element#rosemary p {
+	bottom:40px;
+}
+.element:hover p {
+	visibility: visible;
+}
